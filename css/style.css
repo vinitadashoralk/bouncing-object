@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.box {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  border: 10px solid #d7929ecf;
+  background-color: pink;
+  animation: fallDown 5s ease, bounce 5s ease forwards 2s;
+}
+
+@keyframes fallDown {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(calc(100vh - 150px)) rotate(360deg);
+  }
+  100% {
+    transform: translateY(calc(100vh - 150px)) rotate(360deg);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(calc(100vh - 150px));
+  }
+  50% {
+    transform: translateY(calc(100vh - 300px)) rotate(180deg);
+  }
+  100% {
+    transform: translateY(calc(100vh - 150px)) rotate(90deg);
+  }
+}
