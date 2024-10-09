@@ -14,7 +14,7 @@
   border-radius: 10px;
   border: 10px solid #d7929ecf;
   background-color: pink;
-  animation: fallDown 5s ease, bounce 5s ease forwards 2s;
+  animation: fallDown 5s ease, bounce 5s ease forwards 3s;
 }
 
 @keyframes fallDown {
@@ -32,10 +32,11 @@
   0% {
     transform: translateY(calc(100vh - 150px));
   }
-  50% {
-    transform: translateY(calc(100vh - 300px)) rotate(180deg);
+  25% {
+    transform: translateY(calc(100vh - 300px)) rotate(90deg);
   }
+
   100% {
-    transform: translateY(calc(100vh - 150px)) rotate(90deg);
+    transform: translate(calc(50vh + 50px), calc(100vh - 150px)) rotate(180deg);
   }
 }
